@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: aliceblue;
+}
+a { color: darkslateblue;
+    text-decoration: none;
+    transition: all .6s ease;
+    }
+a:hover {
+    color: #4e66ff;
+    text-decoration: none;
+    transition: all .6s ease;
+}
+.btn:hover{
+    border-bottom: 2px solid red;
+    margin-top: 10px;
+}
+.btn:active{
+    border-bottom: 0;
+    margin-top: 12px;
+}
+.btn {
+    float: left;
+    padding: 20px;
+    margin: 8px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    background-color: gold;
+    text-shadow: #ff6827;
+    color: darkslateblue;
+    border-bottom: 4px solid darkorange;
+    font-family: 'Caveat', cursive;
+}
+h1{
+    font-family: 'Marck Script', cursive;
+    text-align: center;
+    padding: 20px;
+}
+div>a>img{
+    padding: 3px;
+    border-radius: 10px;
+    width: 95%;
