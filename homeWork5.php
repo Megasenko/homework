@@ -157,28 +157,65 @@ echo "<br><br>";
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function mySort(&$A)
+function mySort(&$array)
 {
-    for ($i = (count($A) - 1); $i >= 0; $i--) {
-        for ($j = 0; $j <= ($i - 1); $j++)
-            if ($A[$j] > $A[$j + 1]) {
-                $tmp = $A[$j];
-                $A[$j] = $A[$j + 1];
-                $A[$j + 1] = $tmp;
-            }
+    foreach ($array as $value) {
+        $arrayVal[] = $value;
     }
-    return true;
+    $flag = true;
+    while ($flag) {
+        $size = count($arrayVal) - 1;
+        $flag = false;
+        for ($i = 0; $i < $size; $i++) {
+            if ($arrayVal[$i] > $arrayVal[$i + 1]) {
+                $tmp = $arrayVal[$i];
+                $arrayVal[$i] = $arrayVal[$i + 1];
+                $arrayVal[$i + 1] = $tmp;
+                $flag = true;
+            }
+        }
+    }
+    $array=$arrayVal;
+    if (!$flag) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-$array1 = [1, 3, 2, 5, 0, 7, 4, 9, 6, 8];
-
-//var_dump(sort($array1));
+$array = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k",
+    "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G",
+    "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", " ", "!", "@",
+    "#", "\\\$", "%", "^", "&", "*", "(", ")", "_", "-", "=", "+", "\\\\", "|", ",", "<", ".", ">", "?", "'",
+    "\\\"", "`", "~"];
+echo implode(" ", $array);
 echo "<br>";
-print_r($array1);
+var_dump(mySort($array));
 echo "<br>";
-var_dump(mySort($array1));
-echo "<br>";
-print_r($array1);
+echo implode(" ", $array);
 echo "<br><br>";
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function mySort2(&$array)
+{
+    $size = count($array) - 1;
+    for ($a = 0; $a < $size; $a++) {
+        $flag = 0;
+        for ($i = 0; $i < $size - $a; $i++) {
+            $elem1 = $array[$i];
+            $elem2 = $array[$i + 1];
+            if ($elem1 > $elem2) {
+                $array[$i] = $elem2;
+                $array[$i + 1] = $elem1;
+                $flag = 1;
+            }
+        }
+    }
+    if ($flag == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

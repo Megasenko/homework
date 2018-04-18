@@ -6,30 +6,40 @@
  * Time: 22:18
  */
 
-function mySort(&$A)
+
+function mySort2(&$array)
 {
-    for ($i = (count($A) - 1); $i >= 0; $i--) {
-        for ($j = 0; $j <= ($i - 1); $j++)
-            if ($A[$j] > $A[$j + 1]) {
-                $tmp = $A[$j];
-                $A[$j] = $A[$j + 1];
-                $A[$j + 1] = $tmp;
+
+    $size = count($array) - 1;
+    for ($a = 0; $a < $size; $a++) {
+        $flag = 0;
+        for ($i = 0; $i < $size - $a; $i++) {
+            $elem1 = $array[$i];
+            $elem2 = $array[$i + 1];
+            if ($elem1 > $elem2) {
+                $array[$i] = $elem2;
+                $array[$i + 1] = $elem1;
+                $flag = 1;
             }
+        }
     }
-    return true;
+    if ($flag == 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-$array1 = ['aaa' => 'one', 3 => 2, 'bbb' => 'two'];
 
-echo "<pre>";
-//var_dump(sort($array1));
+$array = [ 9, 8, 7, 6, 5,0, 4, 3, 2, 1];
+//var_dump(sort($array));
+var_dump(mySortirovka($array));
+print_r($array);
 
-foreach ($array1 as $key => $val) {
-    echo $key . '=>' . $val . "<br>";
-}
-echo "<br>";
-var_dump(mySort($array1));
 
-foreach ($array1 as $key => $val) {
-    echo $key . '=>' . $val . "<br>";
-}
+
+
+
+
+
+
