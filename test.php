@@ -6,43 +6,41 @@
  * Time: 22:18
  */
 
-function myTrim($string)
+
+function myMin($array)
 {
-    $del = ' ';
-    $str=null;
-    $i=0;
-    while ($string{$i} == $del){
-           $string{$i}=null;
-            if (($string{$i+1} != $del)){
-                $ok=true;
-                break;
-            }
-        $i++;
-    }
-    $j=$i+1;
-    while ($ok){
-        $str.=$string{$j};
-        if(!isset($string{$j+1})){
-            $ok=false;
+    if ($array !=[]) {
+        foreach ($array as $value) {
+            $arrayVal[] = $value;
         }
-        $j++;
-    }
-
-    $k=$j;
-        while ($string{$k}){
-            if ($string{$k} != $del){
-//                ljhf,jnfnm
-
+        $size = count($arrayVal) - 1;
+        for ($i = 0; $i < $size; $i++) {
+            if ($arrayVal[$i] < $arrayVal[$i + 1]) {
+                $tmp = $arrayVal[$i];
+                $arrayVal[$i] = $arrayVal[$i + 1];
+                $arrayVal[$i + 1] = $tmp;
             }
         }
-        $k--;
-    return $str;
+        return $arrayVal[$size];
+    } else {
+        echo "<b>Warning</b>: min(): Array must contain at least one element <br>";
+        return false;
+    }
 }
 
-$p = '     qwerty qwerty   ';
-var_dump(trim($p));
+$array = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
+    "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P",
+    "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+//$array = [ 1, 8, 7, 6, 5,0, 4, 3, 2, 9];
+//$array=[];
+
+print_r($array);
 echo "<br>";
-var_dump(myTrim($p));
+//var_dump( min($array));
+var_dump(myMin($array));
+
+
+
 
 
 
