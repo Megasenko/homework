@@ -6,44 +6,30 @@
  * Time: 22:18
  */
 
-function myTrim($string)
+function mySort(&$A)
 {
-    $del = ' ';
-    $str=null;
-    $i=0;
-    while ($string{$i} == $del){
-           $string{$i}=null;
-            if (($string{$i+1} != $del)){
-                $ok=true;
-                break;
+    for ($i = (count($A) - 1); $i >= 0; $i--) {
+        for ($j = 0; $j <= ($i - 1); $j++)
+            if ($A[$j] > $A[$j + 1]) {
+                $tmp = $A[$j];
+                $A[$j] = $A[$j + 1];
+                $A[$j + 1] = $tmp;
             }
-        $i++;
     }
-    $j=$i+1;
-    while ($ok){
-        $str.=$string{$j};
-        if(!isset($string{$j+1})){
-            $ok=false;
-        }
-        $j++;
-    }
-
-    $k=$j;
-        while ($string{$k}){
-            if ($string{$k} != $del){
-//                ljhf,jnfnm
-
-            }
-        }
-        $k--;
-    return $str;
+    return true;
 }
 
-$p = '     qwerty qwerty   ';
-var_dump(trim($p));
+$array1 = ['aaa' => 'one', 3 => 2, 'bbb' => 'two'];
+
+echo "<pre>";
+//var_dump(sort($array1));
+
+foreach ($array1 as $key => $val) {
+    echo $key . '=>' . $val . "<br>";
+}
 echo "<br>";
-var_dump(myTrim($p));
+var_dump(mySort($array1));
 
-
-
-
+foreach ($array1 as $key => $val) {
+    echo $key . '=>' . $val . "<br>";
+}
