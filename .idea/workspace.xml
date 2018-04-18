@@ -15,8 +15,6 @@
       <change afterPath="$PROJECT_DIR$/../classWork.loc/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../classWork.loc/classWork4.php" beforeDir="false" afterPath="$PROJECT_DIR$/../classWork.loc/classWork4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../classWork.loc/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/../classWork.loc/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homeWork5.php" beforeDir="false" afterPath="$PROJECT_DIR$/homeWork5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
@@ -29,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="homeWork5.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="homeWork5.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homeWork5.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="161" column="3" lean-forward="true" selection-start-line="161" selection-start-column="3" selection-end-line="163" selection-end-column="5" />
+            <state relative-caret-position="558">
+              <caret line="314" column="36" selection-start-line="314" selection-start-column="36" selection-end-line="314" selection-end-column="36" />
               <folding>
                 <element signature="e#6#178#0#PHP" />
                 <element signature="e#478#599#0#PHP" />
@@ -46,11 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homeWork4.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homeWork4.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="35" column="36" lean-forward="true" selection-start-line="5" selection-end-line="35" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="476">
+              <caret line="39" column="24" lean-forward="true" selection-start-line="9" selection-end-line="39" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -58,8 +65,8 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../classWork.loc/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="103" selection-start-line="103" selection-end-line="122" selection-end-column="1" />
+            <state relative-caret-position="225">
+              <caret line="101" column="25" lean-forward="true" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
               <folding>
                 <element signature="e#86#109#0#PHP" />
                 <element signature="e#674#711#0#PHP" />
@@ -99,8 +106,8 @@
         <option value="$PROJECT_DIR$/homeWork4.php" />
         <option value="$PROJECT_DIR$/../classWork.loc/classWork4.php" />
         <option value="$PROJECT_DIR$/../classWork.loc/function.php" />
-        <option value="$PROJECT_DIR$/homeWork5.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/homeWork5.php" />
       </list>
     </option>
   </component>
@@ -123,7 +130,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -202,7 +209,7 @@
       <workItem from="1523700728172" duration="1327000" />
       <workItem from="1523893873351" duration="6381000" />
       <workItem from="1523955232338" duration="20137000" />
-      <workItem from="1524043472662" duration="9880000" />
+      <workItem from="1524043472662" duration="13090000" />
     </task>
     <task id="LOCAL-00001" summary="home">
       <created>1523116970739</created>
@@ -215,7 +222,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164728000" />
+    <option name="totallyTimeSpent" value="167938000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -230,7 +237,7 @@
     <frame x="0" y="-1" width="1280" height="765" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.51863855" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2439222" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5008104" side_tool="true" weight="0.3291536" />
@@ -563,13 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homeWork4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../classWork.loc/classWork4.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -579,8 +579,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../classWork.loc/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="103" selection-start-line="103" selection-end-line="122" selection-end-column="1" />
+        <state relative-caret-position="225">
+          <caret line="101" column="25" lean-forward="true" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
           <folding>
             <element signature="e#86#109#0#PHP" />
             <element signature="e#674#711#0#PHP" />
@@ -590,10 +590,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="9" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeWork4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="35" column="36" lean-forward="true" selection-start-line="5" selection-end-line="35" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homeWork5.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="161" column="3" lean-forward="true" selection-start-line="161" selection-start-column="3" selection-end-line="163" selection-end-column="5" />
+        <state relative-caret-position="558">
+          <caret line="314" column="36" selection-start-line="314" selection-start-column="36" selection-end-line="314" selection-end-column="36" />
           <folding>
             <element signature="e#6#178#0#PHP" />
             <element signature="e#478#599#0#PHP" />
@@ -602,13 +616,6 @@
             <element signature="e#2233#2588#0#PHP" />
             <element signature="e#2899#3145#0#PHP" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>

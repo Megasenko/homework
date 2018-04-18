@@ -175,7 +175,7 @@ function mySort(&$array)
             }
         }
     }
-    $array=$arrayVal;
+    $array = $arrayVal;
     if (!$flag) {
         return true;
     } else {
@@ -218,4 +218,98 @@ function mySort2(&$array)
         return false;
     }
 }
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function myMax($array)
+{
+    if ($array != []) {
+        foreach ($array as $value) {
+            $arrayVal[] = $value;
+        }
+        $size = count($arrayVal) - 1;
+        for ($i = 0; $i < $size; $i++) {
+            if ($arrayVal[$i] > $arrayVal[$i + 1]) {
+                $tmp = $arrayVal[$i];
+                $arrayVal[$i] = $arrayVal[$i + 1];
+                $arrayVal[$i + 1] = $tmp;
+            }
+        }
+        return $arrayVal[$size];
+    } else {
+        echo "<b>Warning</b>: myMax(): Array must contain at least one element <br>";
+        return false;
+    }
+}
+
+$array = ['b', 'a', 'd', 'c'];
+print_r($array);
+echo "<br>";
+//$array = [ 1, 8, 7, 6, 5,0, 4, 3, 2, 9];
+//$array=[];
+print_r(myMax($array));
+echo "<br>";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function myMin($array)
+{
+    if ($array != []) {
+        foreach ($array as $value) {
+            $arrayVal[] = $value;
+        }
+        $size = count($arrayVal) - 1;
+        for ($i = 0; $i < $size; $i++) {
+            if ($arrayVal[$i] < $arrayVal[$i + 1]) {
+                $tmp = $arrayVal[$i];
+                $arrayVal[$i] = $arrayVal[$i + 1];
+                $arrayVal[$i + 1] = $tmp;
+            }
+        }
+        return $arrayVal[$size];
+    } else {
+        echo "<b>Warning</b>: myMin(): Array must contain at least one element <br>";
+        return false;
+    }
+}
+
+$array = ['b', 'c', 'a', 'd'];
+//$array = [ 1, 8, 7, 6, 5,0, 4, 3, 2, 9];
+//$array=[];
+print_r(myMin($array));
+
+echo "<br><br>";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function myRound($float)
+{
+    $float = (string)$float;
+    $i = 0;
+    $number = null;
+    while (isset($float{$i})) {
+        $res[] = $float{$i};
+        $i++;
+    }
+    $i = 0;
+    foreach ($res as $val) {
+        if ($val != '.') {
+            $int[] = $val;
+            $i++;
+            $proverka = $res[$i + 1];
+        } else break;
+    }
+
+    $proverka *= 1;
+    foreach ($int as $val) {
+        $number .= $val;
+    }
+    if ($proverka < 5) {
+        $result = $number + 0;
+    } else {
+        $result = $number + 1;
+    }
+
+    return $result;
+}
+echo myRound($numb = 2222.34567890);
